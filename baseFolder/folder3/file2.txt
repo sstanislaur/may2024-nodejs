@@ -1,0 +1,1 @@
+Це вміст файлу C:\Users\stas\IdeaProjects\may2024-nodejs\baseFolder\folder3\file2.txt
