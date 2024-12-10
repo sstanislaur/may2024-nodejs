@@ -19,7 +19,7 @@ const writeDB = (data) => {
     fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
 };
 
-app.get('/[]', (req, res) => {
+app.get('/users', (req, res) => {
     const users = readDB();
     res.json(users);
 });
