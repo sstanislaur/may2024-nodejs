@@ -7,20 +7,20 @@ const router = Router();
 
 router.get("/", userController.getList);
 router.post(
-    "/",
-    commonMiddleware.validateBody("create"),
-    userController.create,
+  "/",
+  commonMiddleware.validateBody("create"),
+  userController.create,
 );
 
 router.get(
-    "/:userId",
-    commonMiddleware.isIdValid("userId"),
-    userController.getUserById,
+  "/:userId",
+  commonMiddleware.isIdValid("userId"),
+  userController.getUserById,
 );
 router.put(
-    "/:userId",
-    commonMiddleware.validateBody("update"),
-    userController.updateUser,
+  "/:userId",
+  commonMiddleware.validateBody("update"),
+  userController.updateUser,
 );
 router.delete("/:userId", userController.deleteUser);
 
